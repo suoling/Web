@@ -47,6 +47,8 @@ VS Code 的全称是 Visual Studio Code，是一款开源的、免费的、跨�
 
 - VS Code 官网：<https://code.visualstudio.com>
 
+
+
 VS Code 的安装很简单，直接去官网下载安装包，然后双击安装即可。
 
 ![](http://img.smyhvae.com/20190313_1750_2.png)
@@ -97,6 +99,8 @@ VS Code用得熟不熟，首先就看你是否会用快捷键。以下列出的�
 | **Cmd + Enter** | Ctrl + Enter | 在当前行下面新增一行，然后跳至该行 | 即使光标不在行尾，也能快速向下插入一行 |
 | **Option + ↑** |  Alt + ↑| 将代码向上移动 | 很常用 |
 | **Option + ↓** |  Alt + ↓| 将代码向下移动 | 很常用 |
+| **Option + Shift + ↑** |  Alt + Shift + ↑| 将代码向上复制 | 很常用 |
+| **Option + Shift + ↓** |  Alt + Shift + ↓| 将代码向下复制 | 很常用 |
 
 ### JS语言相关
 
@@ -441,6 +445,27 @@ GitLens 在 Git 管理上有很多强大的功能，比如：
 
 - 可以将两个 commit 进行代码对比，甚至可以将两个 branch 分支进行整体的代码对比。这一点，简直是 GitLens 最强大的功能。
 
+### Bracket Pair Colorizer 2：突出显示成对的括号【荐】
+
+`Bracket Pair Colorizer 2`插件：以不同颜色显示括号并用连线标注括号范围。
+
+### Rainbow Brackets：
+
+`Rainbow Brackets`插件：突出显示成对的括号。
+
+### indent-rainbow：突出显示缩进
+
+`indent-rainbow`插件：突出显示缩进。
+
+安装完成后，效果如下图所示：
+
+![](http://img.smyhvae.com/20190418_1958.png)
+
+
+### Project Manager
+
+工作中，我们经常会来回切换多个项目，每次都要找到对应项目的目录再打开，比较麻烦。Project Manager插件可以解决这样的烦恼，它提供了专门的视图来展示你的项目，我们可以把常用的项目保存在这里，需要时一键切换，十分方便。
+
 ### RemoteHub
 
 不要惊讶，RemoteHub 和 GitLens 是同一个作者开发出来的。
@@ -467,22 +492,6 @@ GitLens 在 Git 管理上有很多强大的功能，比如：
 
 安装了插件 `TODO Highlight`之后，按住「Cmd + Shift + P」打开命令面板，输入「Todohighlist」，选择相关的命令，我们就可以看到一个 todoList 的清单。
 
-
-### Bracket Pair Colorizer 2：突出显示成对的括号【荐】
-
-`Bracket Pair Colorizer 2`插件：以不同颜色显示括号并用连线标注括号范围。
-
-### Rainbow Brackets：
-
-`Rainbow Brackets`插件：突出显示成对的括号。
-
-### indent-rainbow：突出显示缩进
-
-`indent-rainbow`插件：突出显示缩进。
-
-安装完成后，效果如下图所示：
-
-![](http://img.smyhvae.com/20190418_1958.png)
 
 ### sftp：文件传输
 
@@ -532,6 +541,16 @@ GitLens 在 Git 管理上有很多强大的功能，比如：
 }
 ```
 
+### highlight-icemode：选中相同的代码时，让高亮显示更加明显【荐】
+
+VSCode自带的高亮显示，实在是不够显眼。用插件支持一下吧。
+
+所用了这个插件之后，VS Code自带的高亮就可以关掉了：
+
+在用户设置里添加`"editor.selectionHighlight": false`即可。
+
+
+参考链接：[vscode 选中后相同内容高亮插件推荐](https://blog.csdn.net/palmer_kai/article/details/79548164)
 
 ### 颜色主题推荐： SynthWave '84
 
@@ -551,11 +570,11 @@ GitLens 在 Git 管理上有很多强大的功能，比如：
 
 ![](http://img.smyhvae.com/20190418_2005.png)
 
-### Settings Sync
+### Settings Sync 【荐】
 
 - 地址：<https://github.com/shanalikhan/code-settings-sync>
 
-- 作用：多台设备之间，同步 VS Code 配置。
+- 作用：多台设备之间，同步 VS Code 配置。通过登录 GitHub 账号来使用这个同步工具。
 
 ### vscode-pigments
 
@@ -580,4 +599,3 @@ css颜色高亮显示。
 ## 参考链接
 
 「Vscode」打造类sublime的高颜值编辑器：https://idoubi.cc/2019/07/08/vscode-sublime-theme/
-
